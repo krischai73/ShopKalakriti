@@ -1,68 +1,107 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Kalakriti - An E-Commerce for Artisans
 
-## Available Scripts
+Welcome to the ShopKalakriti.live GitHub repository for the MERN e-commerce project! This repository contains the source code and assets for the ShopKalakriti.live website, built using the MERN stack.
 
-In the project directory, you can run:
+## Introduction
 
-### `npm start`
+KalaKriti is an online platform that showcases and sells handmade and unique art and craft products. It aims to provide a marketplace for talented artisans and craftsmen to showcase and sell their creations to a wider audience. The project is built using the MERN stack, which includes MongoDB, Express.js, React, and Node.js.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Features
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+- Browse and search for a wide variety of art and craft products.
+- View detailed product descriptions, images, and pricing information.
+- Add products to your shopping cart for easy purchasing.
+- Secure checkout process to complete your purchase.
+- User authentication and account management.
+- Manage your profile and view order history.
+- Contact form to get in touch with the KalaKriti team.
 
-### `npm test`
+## Technologies Used
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Frontend**: React, HTML, CSS, JavaScript
+- **Backend**: Node.js, Express.js
+- **Database**: MongoDB
+- **Payment Gateway**: Stripe
 
-### `npm run build`
+## Installation
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+To run the KalaKriti MERN e-commerce project locally, follow these steps:
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+1. Clone this repository to your local machine using the following command:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+   ```bash
+   git clone https://github.com/shopkalakriti/shopkalakriti.live.git
+   ```
 
-### `npm run eject`
+2. Navigate to the project directory:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+   ```bash
+   cd shopkalakriti.live
+   ```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+3. Install the dependencies for the backend:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+   ```bash
+   cd backend
+   npm install
+   ```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+4. Install the dependencies for the frontend:
 
-## Learn More
+   ```bash
+   cd ../frontend
+   npm install
+   ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+5. Create a `.env` file in the root directory and set the following environment variables:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+   ```bash
+   NODE_ENV=development
+   PORT=5000
+   MONGODB_URI=<your_mongodb_uri>
+   JWT_SECRET=<your_jwt_secret>
+   STRIPE_API_KEY=<your_stripe_api_key>
+   ```
 
-### Code Splitting
+6. Run the backend server:
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+   ```bash
+   cd backend
+   npm run dev
+   ```
 
-### Analyzing the Bundle Size
+7. Run the frontend server:
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+   ```bash
+   cd frontend
+   npm start
+   ```
 
-### Making a Progressive Web App
+8. Open your browser and navigate to `http://localhost:3000` to view the application.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+## Contributions
 
-### Advanced Configuration
+Contributions to the project are welcome! If you find a bug, have a feature request, or want to contribute code, please follow these steps:
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+1. Fork this repository to your GitHub account.
+2. Clone the forked repository to your local machine using the following command:
 
-### Deployment
+   ```bash
+   git clone https://github.com/shopkalakriti/shopkalakriti.live.git
+   ```
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+3. Create a new branch using the following command:
 
-### `npm run build` fails to minify
+   ```bash
+   git checkout -b new-branch-name
+   ```
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+4. Make your changes and commit them to your local repository.
+
+5. Push your changes to your forked repository:
+
+   ```bash
+   git push origin new-branch-name
+   ```
+
+6. Open a pull request for review.
